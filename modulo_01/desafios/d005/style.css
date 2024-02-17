@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #6a9bd3;
+  width: 600px;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+img#minha_imagem {
+  border-radius: 50%;
+  display: flex;
+  margin: 10px;
+}

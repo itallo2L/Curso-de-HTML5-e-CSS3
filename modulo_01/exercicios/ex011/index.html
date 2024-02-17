@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Mídias em HTML</title>
+</head>
+
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes
+    ou simplesmente aumente e diminua o tamanho do seu navegador.
+  </p>
+
+  <!-- OBS: No uso da tag abaixo a ordem das imagens importa, como aqui estamos trabalhando com a media="max-width", ou "largura máxima" a ordem das imagens deve ser da maior para a menor quando olhamos de baixo para cima -->
+  <picture> <!-- É como uma sequência de imagens -->
+    <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png" alt="Imagem pequena">
+    <!-- essa é a opção "source:media:type", no parâmetro "media" temos a largura máxima de 750px, no "srcset" temos o caminho para a imagem pequena (o que quer dizer que quando a tela suportar menos de 750px ele vai mostrar a imagem p (pequena)), o "type" é o tipo da imagem e o "alt" o texto alternativo -->
+    <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png" alt="Imagem média">
+    <!-- Aqui a largura máxima é 1050px e o parâmetro "srcset" está apontando para a imagem média, o que quer dizer que quando a tela suportar menos de 1050px ele vai mostrar a imagem m (média) -->
+    <img src="imagens/foto_g.png" alt="Imagem grande">
+    <!-- A imagem acima vai ser mostrada quando a tela suportar mais de 1050px de largura-->
+  </picture>
+  <h1>Reproduzindo Áudio</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+  <audio preload="metadata" controls>
+    <!-- A tag "audio" é auto explicativa, o parâmetro "preload" dita quando o arquivo de áudio será carregado para reprodução, dentro dele temos 3 opções: -->
+    <!-- auto - carrega a página somente quando o arquivo de áudio estiver todo pronto para a reprodução, se for um arquivo de áudio grande isso vai exigir muito mais da internet -->
+    <!-- metadata - carrega só o exencial (nome do arquivo, tempo de duração...) juntamente com a página -->
+    <!-- none - só começa a fazer o download do áudio quando ele é colocado para reprodução -->
+    <!-- "controls" serve para adicionar um controle para o áudio na página -->
+    <source src="media/track_by_guilherme_mendes.mp3" type="audio/mpeg">
+    <!-- Acima temos a opção "source:src", o "src" serve para colocar o link do arquivo de áudio -->
+    <p>Infelizmente o seu navegador não consegue reproduzir áudio. Clique <a
+        href="media/track_by_guilherme_mendes.mp3">aqui</a> para baixar o arquivo MP3</p>
+  </audio>
+  <p><a href="https://www.instagram.com/p/C0-FG5Byww7/" hreflang="pt-br" target="_blank" rel="external">Áudio
+      original</a>.</p>
+</body>
+
+</html>

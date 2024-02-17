@@ -1,0 +1,20 @@
+@charset "UTF-8"; /* Essa é uma regra para padronizar a compatibilidade com 
+acentuação, assim como temos por padrão nos códigos HTML*/
+
+body {
+  background-color: lightyellow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  color: lightgreen;
+}
+
+h2 {
+  color: lightskyblue;
+}
+
+p {
+  text-align: justify;
+}

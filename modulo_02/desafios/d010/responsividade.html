@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <title>Teste de responsividade</title>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+
+      /*Os max e o min-width tornarão o conteúdo main responsivo*/
+      min-width: 280px; /*Largura mínima*/
+      max-width: 800px; /*Largura máxima*/
+      margin: auto;
+    }
+
+    img { /*A configuração abaixo tornará a imagem responsiva*/
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Testando Responsividade</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo alias cumque mollitia numquam odit earum
+      delectus atque consectetur minima illo et quod eius laudantium ut fuga, quos tempore nam dicta. Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Temporibus, odio cumque dolores dicta animi quae iure atque nostrum odit
+      optio in ducimus placeat illo ipsam itaque enim id minus adipisci. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Rem impedit, harum vitae perferendis ipsa corporis a assumenda accusamus quod animi cum hic
+      dolore amet natus! Voluptate dolore itaque architecto perferendis?</p>
+    <picture>
+      <source media="(max-width: 600px)" srcset="imagens/dan-droids-pq.png" type="image/png">
+      <img src="imagens/dan-droids.png" alt="Imagem dos dan-droids">
+    </picture>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo alias cumque mollitia numquam odit earum
+      delectus atque consectetur minima illo et quod eius laudantium ut fuga, quos tempore nam dicta. Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Temporibus, odio cumque dolores dicta animi quae iure atque nostrum odit
+      optio in ducimus placeat illo ipsam itaque enim id minus adipisci. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Rem impedit, harum vitae perferendis ipsa corporis a assumenda accusamus quod animi cum hic
+      dolore amet natus! Voluptate dolore itaque architecto perferendis?</p>
+  </main>
+</body>
+
+</html>

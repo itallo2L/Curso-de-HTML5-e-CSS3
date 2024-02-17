@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Fontes em CSS</title>
+  <style>
+    body {
+      /* Abaixo selecionamos a família da fonte, é recomendado três opções de
+       família porque caso o dispositivo que está carregando o site não
+        encontrar uma opção ele tenta a outra */
+      /* Esse tipo de declaração se chama 
+      safe combination (combinações seguras) */
+      font-family: Arial, Helvetica, sans-serif;
+      /*
+      Medidas Absolutas:
+      cm, mm, in (polegada), px, pt (ponto), pc (paica)
+      
+      Medidas Relativas
+      em (relativa à altura-M), ex (relativo à altura-x), rem (Relativa ao root - fonte configurada no body), vw (largura da viewport - tamanho da tela - em porcentagem), vh (altura da viewport), %
+      Geralmente 1em = 16px
+      */
+      font-size: 1em;
+      /* peso da fonte: */
+      font-weight: normal;
+      /* Temos a opção de representar o peso por número ou por palavras:
+        100, 200, 300, 400, 500, 600, 700, 800, 900
+        ligther, normal, bold, bolder
+      */
+      font-style: italic; /* Estilo da fonte */
+      text-decoration: underline; /* Decoração do texto - underline = sublinado */
+    }
+
+    h1 {
+      /* shorthand font - mãozinha:
+        Ordem das declarações: font-style -> font-weight -> font-size -> font-family
+
+        O shorthand substitui o código abaixo, permitindo fazê-lo em uma única linha:
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bold;
+        font-size: 3em;
+        font-style: italic;
+      */
+      font: italic bold 3em 'Work Sans', sans-serif;
+    }
+
+    h2 {
+      font: bold 3em 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsam laborum, numquam aspernatur inventore deserunt
+    reiciendis similique. Inventore cum, adipisci debitis a amet impedit facilis officiis vitae? Possimus, laboriosam
+    assumenda!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat totam, veniam voluptatem porro minus cumque
+    dolor delectus earum ipsa. Commodi, doloribus. Ducimus ipsum in delectus qui enim consectetur suscipit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae excepturi cupiditate mollitia quo vitae cum, ipsum,
+    omnis accusantium tempora animi molestiae reiciendis doloremque, laborum ratione architecto quam id officia dolores!
+  </p>
+  <h2>Subtítulo do exercício</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi molestias fugit officia sunt ex, reprehenderit,
+    molestiae illum quam provident beatae eum? Laboriosam voluptatum dicta tempora. Nisi, fugit consequuntur. Cumque,
+    blanditiis.</p>
+</body>
+
+</html>

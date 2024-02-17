@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Formatação de textos</title>
+</head>
+
+<body>
+  <h1>Principais formatações</h1>
+  <h2>1. Destaque</h2>
+  <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+  <h2>2. Ênfase</h2>
+  <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+  <h2>3. Texto marcado</h2>
+  <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+  <h2>4. Texto estilizado</h2>
+  <p>e no outro parágrafo, temos <mark style="background-color: limegreen;">outro texto marcado</mark> no final.</p>
+  <h2>5. Texto pequeno</h2>
+  <p>Estamos criando um <small>texto pequeno</small> nesse parágrafo.</p>
+  <h2>6. Texto deletado</h2>
+  <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+  <h2>7. Texto inserido</h2>
+  <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+  <h2>8. Texto sobrescrito</h2>
+  <p>Para inserir coisas do tipo x<sup>20</sup>
+    +3</p>
+  <h2>9. Texto subscrito</h2>
+  <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+  <h2>10. Código-fonte / Pré-formatação</h2>
+  <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+  <code>
+    num = int(input('Digite um número'))
+      if num % 2 == 0:
+        print(f'O número {num} é PAR')
+      else:
+        print(f'O número {num} é ÍMPAR')
+      print('Fim do programa')</code>
+  <h2>11. Identação</h2>
+  <pre> <!--Considera a identação do seu código -->
+    <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+      print(f'O número {num} é PAR')
+    else:
+      print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+    </code>
+  </pre>
+  <h2>12. Citações simples</h2>
+  <p>Como diria o Tio Ben: <q>Com grandes poderes vêm grandes responsabilidades.</q>
+    <!-- A tag "q" signifia "quote" que é "citação" em inglês-->
+  </p>
+  <h2>13. Citações completas</h2>
+  <p>Segundo CS Lewis, em seu livro Surpeendido pela alegria:</p>
+  <blockquote
+    cite="https://www.amazon.com.br/Surpreendido-pela-alegria-C-S-Lewis/dp/6556894753/ref=asc_df_6556894753/?tag=googleshopp00-20&linkCode=df0&hvadid=379792625255&hvpos=&hvnetw=g&hvrand=9340599853442875669&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001552&hvtargid=pla-1426388621973&psc=1&mcid=b02dbb6f274f3a37ba200219252a99e8">
+    A dureza de Deus é mais suave que a suavidade dos homens, e sua coerção é nossa libertação.</blockquote>
+  <!-- Bloco de citação, esse link no bloco é só para o navegador entender de onde vem a citação, não vai levar o usuário direto para o destino do link-->
+  <h2>15. Abreviações</h2>
+  <p>O único que salva é<abbr title="Jesus Cristo">JC</abbr>!</p>
+  <h2>16.Texto invetido</h2>
+  <p><bdo dir="rtl">Olha só meu texto invetido.</bdo></p>
+</body>
+
+</html>

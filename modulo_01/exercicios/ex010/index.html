@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Trabalhando com links</title>
+</head>
+<body>
+  <h1>Usando links externos</h1> <!-- Links que levam à outros sites -->
+  <p>Você pode acessar o meu <a href="https://github.com/itallo2L" target="_blank
+    " rel="external">repositório público no GitHub</a>
+    <!-- A tag "a" significa âncora, "href" é a referência de hipertexto, o "target" seria o alvo, o parâmetro "_blank" permite que, ao clicar no link ele seja aberto em outra aba, "rel" vem de relativo e "external" denota que o link é externo -->
+  </p>
+  <p>Você também pode acessar o meu <a href="https://www.linkedin.com/in/itallo-cerqueira-costa/" target="_blank
+    " rel="external">perfil do LinkedIn</a>
+  </p>
+  <h1>Usando links internos</h1>
+  <p>Esta é a primeira página do site. Se você quiser, pode também acessar a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+  <!-- O parâmetro "next" dita ao mecanismo de busca que esse link levará para a próxima página -->
+  <!-- O parãmetro "_self" indica que o link em questão deverá ser aberto na própria aba -->
+  <p>VocÊ também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+  <h1>Links para download</h1>
+  <ul>
+    <li><a href="livro/10 - Ligações em toda parte.pdf" download="livro/10 - Ligações em toda parte.pdf" type="application/pdf">Download do material de apoio (aula 10) em PDF</a></li>
+    <li><a href="livro/10 - Ligações em toda parte.rar" download="livro/10 - Ligações em toda parte.rar" type="application/zip">Download do material de apoio (aula 10) em ZIP</a></li>
+  </ul>
+  <!-- Os parâmetros usados acima (download e type) são para que o navegador baixe o arquivo quando o usuário clicar nele, ainda assim é possível que não funcione, como no caso do PDF, ele não está fazendo o download direto ;-; -->
+  <!-- A descrição "application/pdf" e "application/zip" estão em uma lista do site: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+</body>
+</html>

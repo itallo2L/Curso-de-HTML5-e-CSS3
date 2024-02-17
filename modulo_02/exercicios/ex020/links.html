@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Links</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: aqua;
+      text-decoration: none; /*Retirando o sublinado*/
+      font-weight: bold;
+    }
+
+    a:visited { /*a pseudo-classe visited é referente á links visitados*/
+      color: aquamarine;
+    }
+
+    a:hover {
+      color: blue;
+      text-decoration: underline; /*Vai sublinhar quando passar o mouse em 
+      cima do link*/
+    }
+
+    a:active { /*a pseudo-classe active é referente ao clique*/
+      color: lightgreen; /*Ou seja, quando clicarem no link ele ficara 
+      lightgreen durante o momento do click*/ 
+    }
+
+    .especial {
+      background-color: rgb(211, 255, 255);
+    }
+
+    .especial::before { /*pseudo-elemento antes*/
+      content: ' ->';
+    }
+
+    .especial::after { /*pseudo-elemento depois*/
+      content: ' <-';
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://github.com/itallo2L" hreflang="pt-br" target="_blank" rel="external">GitHub</a></li>
+    <li><a href="https://www.youtube.com/@itallocerqueira7339" hreflang="pt-br" 
+      target="_blank" rel="external">YouTube</a></li>
+    <li><a href="https://www.linkedin.com/in/itallo-cerqueira-costa/" 
+      hreflang="pt-br" target="_blank" rel="external" class="especial">
+      LinkedIn</a></li>
+  </ul>
+</body>
+</html>
